@@ -1,24 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes,Route, Link} from "react-router-dom"
+import { useState, useEffect} from 'react';
+
+
+import StartPage from "./components/startPage/startPage" 
+import Login from './components/login/login';
+import Registr from './components/regist/registr';
+import Error from './components/error/error';
+
 
 function App() {
+  const [classNameBlock,setClassNameBlock]=useState("btn-sign__up ");
+let timer;
+
+useEffect(()=>{
+  console.log(timer);
+  return clearTimeout(timer);
+})
+
+  function togleClass(){
+    if(classNameBlock==="btn-sign__up "){
+      setClassNameBlock("btn-sign__up slide-rotate-hor-top")
+      timer=setTimeout(()=>{
+        setClassNameBlock("btn-sign__up ")
+      },800)
+    }else{
+      setClassNameBlock("btn-sign__up ")
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <header >
+      <Link to={"/"}>StartPage</Link>
+      <Link to={"login"}>Sign in</Link>
+      <Link to={"reg"} className={classNameBlock} onClick={togleClass}>Sign up</Link>
+      
+
+    </header>
+    <div className='container'>
+      <Routes>
+          <Route path='/' element={<StartPage/>}/>
+          <Route path='login' element={<Login/>}/>
+          <Route path='reg' element={<Registr/>}/>
+          <Route path='error' element={<Error/>}/>
+
+      </Routes>
     </div>
+  
+    </>
+    
   );
 }
 

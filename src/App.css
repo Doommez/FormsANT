@@ -12,7 +12,43 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+#root{
+  min-height: 100%;
+}
+.container{
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  min-height: 100vh;
+  background-color: aquamarine;
+  border-radius: 10px;
+  /* background-color: #fff0db; */
+}
 
+.btn-sign__up{
+  border-radius: 5px;
+  border: solid 1px black;
+}
+form.login-form{
+  max-width: 300px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header a {
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding:0 20px;
+  font-size: 30px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +70,48 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media  screen and (max-width:500px){
+  header a{
+    font-size: 20px !important;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+}
+
+
+/*q;wje*/
+.slide-rotate-hor-top {
+	-webkit-animation: slide-rotate-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-rotate-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-rotate-hor-top {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg);
+            transform: translateY(0) rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-15px) rotateX(-90deg);
+            transform: translateY(-15px) rotateX(-90deg);
+  }
+  100%{
+    -webkit-transform: translateY(0) rotateX(0deg);
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+@keyframes slide-rotate-hor-top {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg);
+            transform: translateY(0) rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-15px) rotateX(-90deg);
+            transform: translateY(-15px) rotateX(-90deg);
+  }
+  100%{
+    -webkit-transform: translateY(0) rotateX(0deg);
+    transform: translateY(0) rotateX(0deg);
   }
 }
