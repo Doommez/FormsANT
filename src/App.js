@@ -32,7 +32,7 @@ useEffect(()=>{
   return (
     <>
     <header >
-      <Link to={"/"}>StartPage</Link>
+      <Link to={"/FormsANT"}>StartPage</Link>
       <Link to={"login"}>Sign in</Link>
       <Link to={"reg"} className={classNameBlock} onClick={togleClass}>Sign up</Link>
       
@@ -40,7 +40,7 @@ useEffect(()=>{
     </header>
     <div className='container'>
       <Routes>
-          <Route path='/' element={<StartPage/>}/>
+          <Route path='/FormsANT' element={<StartPage/>}/>
           <Route path='login' element={<Login/>}/>
           <Route path='reg' element={<Registr/>}/>
           <Route path='errors' element={<Error/>}/>
