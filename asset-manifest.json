@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FormsANT/static/css/main.373531aa.css",
-    "main.js": "/FormsANT/static/js/main.29ff8e96.js",
+    "main.js": "/FormsANT/static/js/main.c8884432.js",
     "static/js/787.5bd4efce.chunk.js": "/FormsANT/static/js/787.5bd4efce.chunk.js",
     "index.html": "/FormsANT/index.html",
     "main.373531aa.css.map": "/FormsANT/static/css/main.373531aa.css.map",
-    "main.29ff8e96.js.map": "/FormsANT/static/js/main.29ff8e96.js.map",
+    "main.c8884432.js.map": "/FormsANT/static/js/main.c8884432.js.map",
     "787.5bd4efce.chunk.js.map": "/FormsANT/static/js/787.5bd4efce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.373531aa.css",
-    "static/js/main.29ff8e96.js"
+    "static/js/main.c8884432.js"
   ]
 }
