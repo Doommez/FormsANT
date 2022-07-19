@@ -43,7 +43,7 @@ useEffect(()=>{
           <Route path='/' element={<StartPage/>}/>
           <Route path='login' element={<Login/>}/>
           <Route path='reg' element={<Registr/>}/>
-          <Route path='error' element={<Error/>}/>
+          <Route path='errors' element={<Error/>}/>
 
       </Routes>
     </div>

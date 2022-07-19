@@ -9,7 +9,7 @@ const FormLogin = (props) => {
     console.log('Received values of form: ', values);
     let winHash=window.location.origin;
     console.log(winHash);
-    window.location.assign(`${winHash}/error`); 
+    window.location.assign(`${winHash}/errors`); 
   };
 
   return (
